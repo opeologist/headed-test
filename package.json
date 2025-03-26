@@ -6,19 +6,32 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
+    "@react-three/fiber": "^8.18.0",
+    "@types/three": "^0.174.0",
+    "@use-gesture/react": "^10.3.1",
+    "next": "14.2.26",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.26"
+    "three": "^0.174.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@playwright/test": "^1.51.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.26"
+    "eslint-config-next": "14.2.26",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript": "^5"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-organize-imports"
+    ]
   }
 }
